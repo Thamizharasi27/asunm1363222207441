@@ -1,7 +1,19 @@
-year=int(input("Enter a year:"))         
-if(year%400==0)and(year%100==0):
-    Print("{0} is ^ leap year".format(year))
-elif(year%4==0)and(year%100!=0):
-        print("{0} is ^ leap year".format(year))
-else:
-        Print("{0} is not a leap year")
+class BankAccount:
+  def __init__(self,name,no,abalance):
+    self.__account_name=name
+    self.__account_no= no
+    self.__account_balance=abalance
+  def deposit(self,deposit):
+    b._BankAccount__account_balance=b._BankAccount__account_balance+deposit
+  def withdraw(self,withdraw):
+    b._BankAccount__account_balance=b._BankAccount__account_balance-withdraw
+  def accountbalance(self):
+    print('The balance amount is ',b._BankAccount__account_balance)
+b=BankAccount("tamil",123456789,50000)
+print("The account holder name:",b._BankAccount__account_name)
+print("The account number:",b._BankAccount__account_no)
+DA=int(input("Enter deposit amount:"))
+b.deposit(DA)
+WD=int(input("Enter with drawamount:"))
+b.withdraw(WD)
+b.accountbalance()
